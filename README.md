@@ -17,7 +17,7 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
     //Ideally it's better to use a class container to control any processes
 
     /*** process to start, uncomment to enable ***/
-    //SimpleProcessControl.StartProcess(); //start a process
+    //SimpleProcessControl.StartProcess(); 
 
     Device[x].ON();
     break;
@@ -28,7 +28,7 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
     //Follow similar pattern to other devices
 
     /*** process to stop, uncomment to enable ***/
-    //SimpleProcessControl.KillProcess(); //stop a process
+    //SimpleProcessControl.KillProcess(); 
                    
     break;
   case 3:
