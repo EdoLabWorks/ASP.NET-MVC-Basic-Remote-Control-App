@@ -10,15 +10,19 @@ A simple sample is included under the Model folder to start off your process con
 For now, just uncomment the following code section under Lib/ControlProcess.cs
 
 --
-         
-           //*** process to start, uncomment to enable ***/
-           //SimpleProcessControl.StartProcess(); //start a process
+         case 1:
+          x = 1;
+          //*** process to start, uncomment to enable ***/
+          //SimpleProcessControl.StartProcess(); //start a process
+          Device[x].ON();
+          break;
 --
-         
-           //*** process to stop, uncomment to enable ***/
+         case 2:
+          x = 1;
+          Device[x].OFF();
+          //*** process to stop, uncomment to enable ***/
           //SimpleProcessControl.KillProcess(); //stop a process 
-          
-          
+          break;
 
 
 This project is based on C# ASP.NET MVC under Apache License. 
