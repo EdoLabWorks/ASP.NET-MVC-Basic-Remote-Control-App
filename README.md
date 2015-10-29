@@ -1,4 +1,4 @@
-# ASP.NET-Basic-Remote-Control-App-
+# ASP.NET-Basic-Remote-Control-App
 A C# ASP.NET MVC framework bare-bones self-contained remote control app.
 
 Control any executable process in your PC using your mobile device.
