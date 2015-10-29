@@ -10,23 +10,22 @@ A simple sample is included under the Model folder to start off your process con
 For now, just uncomment the following code section under Lib/ControlProcess.cs
 
 --
- case 1:
-   x = 1;
+case 1:
+  x = 1;
 
    //SimpleProcessControl.StartProcess(); 
 
     Device[x].ON();
     break;
- case 2:
-   x = 1;
+case 2:
+  x = 1;
     Device[x].OFF();
 
     //SimpleProcessControl.KillProcess(); 
                    
     break;
- case 3:
- 
- --
+case 3:
+--
 
 
 This project is based on C# ASP.NET MVC under Apache License. 
