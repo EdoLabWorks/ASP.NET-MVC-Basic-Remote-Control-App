@@ -13,8 +13,8 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
  case 1:
     x = 1;
 
-    //There are many ways you to start, control and stop a process/dll driver methods, this is just a simple example 
-    //Ideally it's better to use a class container to control any processes
+   //There are many ways you to start, control and stop a process/dll driver methods, this is just a simple example 
+   //Ideally it's better to use a class container to control any processes
 
    //SimpleProcessControl.StartProcess(); 
 
