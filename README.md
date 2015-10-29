@@ -7,4 +7,4 @@ Just point the file path of the process you want to control to a particular virt
 
 A simple sample is included under Model folder to start off your process control. A procedure link is also included on how to access the app from any browser from other devices. 
 
-This project is based on C# ASP.NET MVC using Apache License. 
+This project is based on C# ASP.NET MVC under Apache License. 
