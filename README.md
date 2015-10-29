@@ -11,19 +11,15 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
 
 --
 case 1:
-  x = 1;
-
-   //SimpleProcessControl.StartProcess(); 
-
-    Device[x].ON();
-    break;
+x = 1;
+  //SimpleProcessControl.StartProcess(); 
+  Device[x].ON();
+  break;
 case 2:
-  x = 1;
-    Device[x].OFF();
-
-    //SimpleProcessControl.KillProcess(); 
-                   
-    break;
+x = 1;
+  Device[x].OFF();
+  //SimpleProcessControl.KillProcess(); 
+  break;
 case 3:
 --
 
