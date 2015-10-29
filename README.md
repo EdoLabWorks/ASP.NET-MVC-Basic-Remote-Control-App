@@ -9,7 +9,7 @@ A simple sample is included under the Model folder to start off your process con
 
 For now, just uncomment the following code section under Lib/ControlProcess.cs
 
---
+-
  case 1:
     x = 1;
 
@@ -32,6 +32,6 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
                    
     break;
   case 3:
-  --
+  -
 
 This project is based on C# ASP.NET MVC under Apache License. 
