@@ -11,25 +11,22 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
 
 --
  case 1:
-    x = 1;
-
-   //There are many ways you to start, control and stop a process/dll driver methods, this is just a simple example 
-   //Ideally it's better to use a class container to control any processes
+   x = 1;
 
    //SimpleProcessControl.StartProcess(); 
 
     Device[x].ON();
     break;
  case 2:
-    x = 1;
+   x = 1;
     Device[x].OFF();
 
-    //Follow similar pattern to other devices
-
-   //SimpleProcessControl.KillProcess(); 
+    //SimpleProcessControl.KillProcess(); 
                    
     break;
  case 3:
+ 
  --
+
 
 This project is based on C# ASP.NET MVC under Apache License. 
