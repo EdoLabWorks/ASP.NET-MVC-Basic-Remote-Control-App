@@ -16,8 +16,7 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
     //There are many ways you to start, control and stop a process/dll driver methods, this is just a simple example 
     //Ideally it's better to use a class container to control any processes
 
-    /*** process to start, uncomment to enable ***/
-    //SimpleProcessControl.StartProcess(); 
+   //SimpleProcessControl.StartProcess(); 
 
     Device[x].ON();
     break;
@@ -27,8 +26,7 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
 
     //Follow similar pattern to other devices
 
-    /*** process to stop, uncomment to enable ***/
-    //SimpleProcessControl.KillProcess(); 
+   //SimpleProcessControl.KillProcess(); 
                    
     break;
  case 3:
