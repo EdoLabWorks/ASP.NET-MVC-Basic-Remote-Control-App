@@ -1,0 +1,165 @@
+﻿<!-- C# Code Razor Syntax -->
+@model SimpleWebControlApp.Model.Led
+@{
+    string color = "orange";
+    string OFFcolor = "red";
+}
+
+@{
+    bool? led1state = Model.led1state;
+    string state1 = "";
+    string OnColor1 = "";
+    string OffColor1 = "";
+    if (led1state == null || led1state == false)
+    {
+        state1 = "OFF";
+        OffColor1 = OFFcolor;
+    }
+    else
+    {
+        state1 = "ON";
+        OnColor1 = color;
+    }
+}
+
+@{
+    bool? led2state = Model.led2state;
+    string state2 = "";
+    string OnColor2 = "";
+    string OffColor2 = "";
+    if (led2state == null || led2state == false)
+    {
+        state2 = "OFF";
+        OffColor2 = OFFcolor;
+    }
+    else
+    {
+        state2 = "ON";
+        OnColor2 = color;
+    }
+}
+
+@{
+    bool? led3state = Model.led3state;
+    string state3 = "";
+    string OnColor3 = "";
+    string OffColor3 = "";
+    if (led3state == null || led3state == false)
+    {
+        state3 = "OFF";
+        OffColor3 = OFFcolor;
+    }
+    else
+    {
+        state3 = "ON";
+        OnColor3 = color;
+    }
+}
+
+@{
+    bool? led4state = Model.led4state;
+    string state4 = "";
+    string OnColor4 = "";
+    string OffColor4 = "";
+    if (led4state == null || led4state == false)
+    {
+        state4 = "OFF";
+        OffColor4 = OFFcolor;
+    }
+    else
+    {
+        state4 = "ON";
+        OnColor4 = color;
+    }
+}
+
+@{
+    bool? led5state = Model.led5state;
+    string state5 = "";
+    string OnColor5 = "";
+    string OffColor5 = "";
+    if (led5state == null || led5state == false)
+    {
+        state5 = "OFF";
+        OffColor5 = OFFcolor;
+    }
+    else
+    {
+        state5 = "ON";
+        OnColor5 = color;
+    }
+}
+
+@{
+    bool? led6state = Model.led6state;
+    string state6 = "";
+    string OnColor6 = "";
+    string OffColor6 = "";
+    if (led6state == null || led6state == false)
+    {
+        state6 = "OFF";
+        OffColor6 = OFFcolor;
+    }
+    else
+    {
+        state6 = "ON";
+        OnColor6 = color;
+    }
+}
+
+@{
+    string BtnType = "btn btn-primary btn-lg";
+    string BtnType2 = "btn btn-info btn-lg";
+}
+<!-- HTML declarative syntax starts here -->
+
+    <h3>Control Panel</h3>
+    <div class="container" style="background-color: black">
+    <br />  
+      <div class="row">
+          <div  id="connectstatus" class="col-sm-4" style="color:white">
+              <p>Connection Status : @Model.OutputModuleStatus </p>
+              <!-- debug info -- <p>TxCode : <strong>@Model.txData</strong></p>
+                   <p>RxData : <strong>@Model.rxData</strong></p> -->
+          </div>
+        <div class ="col-sm-4">
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 1</strong> <!--@state1-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/LedON';" name="actionID" value="ON" style="background-color:@OnColor1" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/LedOFF';" name="actionID" value="OFF" style="background-color:@OffColor1" />
+            <!--<strong class="@BtnType">Device 1</strong> <!--@state1-->
+        </div>
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 2</strong> <!--@state2-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led2ON';" name="actionID" value="ON" style="background-color:@OnColor2" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led2OFF';" name="actionID" value="OFF" style="background-color:@OffColor2" />
+            <!--<strong class="@BtnType">Device 2</strong>  <!--@state2-->
+        </div>
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 3</strong> <!--@state3-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led3ON';" name="actionID" value="ON" style="background-color:@OnColor3" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led3OFF';" name="actionID" value="OFF" style="background-color:@OffColor3" />
+            <!--<strong class="@BtnType">Device 3</strong>  <!--@state3-->
+        </div>
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 4</strong> <!--@state4-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led4ON';" name="actionID" value="ON" style="background-color:@OnColor4" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led4OFF';" name="actionID" value="OFF" style="background-color:@OffColor4" />
+            <!--<strong class="@BtnType">Device 4</strong>  <!--@state4-->
+        </div>
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 5</strong> <!--@state5-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led5ON';" name="actionID" value="ON" style="background-color:@OnColor5" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led5OFF';" name="actionID" value="OFF" style="background-color:@OffColor5" />
+            <!--<strong class="@BtnType">Device 5</strong>  <!--@state5-->
+        </div>
+        <div id="switchbutton">
+            <strong class="@BtnType2">Device 6</strong> <!--@state6-->
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led6ON';" name="actionID" value="ON" style="background-color:@OnColor6" />
+            <input type="button" class="@BtnType" onclick="window.location='/@Model.ControlAPI/Led6OFF';" name="actionID" value="OFF" style="background-color:@OffColor6" />
+           <!-- <strong class="@BtnType">Device 6</strong>  <!--@state6-->
+        </div>
+    </div>
+  </div>
+  <br />
+</div>
