@@ -14,16 +14,18 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
 --
          case 1:
           x = 1;
-          //*** process to start, uncomment to enable ***/
-          //SimpleProcessControl.StartProcess(); //start a process
+          
+         uncomment to start a process
+         //SimpleProcessControl.StartProcess();
           Device[x].ON();
           break;
 --
          case 2:
           x = 1;
           Device[x].OFF();
-          //*** process to stop, uncomment to enable ***/
-          //SimpleProcessControl.KillProcess(); //stop a process 
+          
+         uncomment to stop the process
+         //SimpleProcessControl.KillProcess();  
           break;
 
 
