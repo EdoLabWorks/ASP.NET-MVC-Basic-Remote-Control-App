@@ -1,5 +1,5 @@
 # ASP.NET-Basic-Remote-Control-App
-A bare-bones self-contained remote control app with integrated backend control I/O module. 
+A bare-bones self-contained remote control app with integrated backend I/O control module. 
 
 ![](https://github.com/EdoLabWorks/ximgs/blob/master/AspBasicRemote.png)
 
