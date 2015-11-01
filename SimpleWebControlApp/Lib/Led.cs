@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SimpleWebControlApp.Model
 {
-    //this is actually used for a separate I/O control module but for now re-used for local use
+    //used for a separate I/O control module but for now we are re-using it for local use
     public class Led
     {
         public string OutputModuleStatus { get; set; }
@@ -42,7 +42,7 @@ namespace SimpleWebControlApp.Model
                 WebClientState.Error = "Can't confirm led state? " + " RxData = " + WebClientState.RxData.ToString() + " TxData = " + txdata;
             }
 
-            //if data is intact and no connection error, check all Led state algorithm starts 
+            //if data is intact and no connection error, check all Led states, algorithm work starts 
             if (WebClientState.Error == null && WebClientState.RxData == txdata)
             {
                 //simple algorithm to decode our received digital code (1000000 to 1111111)
@@ -53,7 +53,7 @@ namespace SimpleWebControlApp.Model
                 int[] LedState = new int[8];
                 try
                 {
-                    //parse data should be 1 or 0 only
+                    //parsed value should be 1 or 0 only
                     LedState[6] = int.Parse(data.Remove(0, 6));
                     LedState[5] = int.Parse(data.Remove(0, 5).Remove(1, 1));
                     LedState[4] = int.Parse(data.Remove(0, 4).Remove(1, 2));
@@ -68,7 +68,7 @@ namespace SimpleWebControlApp.Model
 
                 //*********** for test only **************
                 //LedState[1] = 5; LedState[2] = 4; LedState[3] = 5; LedState[4] = 6; LedState[5] = 3; LedState[6] = 2;
-                //any parse value other than 0 or 1 should throw an error message 
+                //any parsed value other than 0 or 1 should throw an error message 
                 //****************************************
 
                 if (LedState[1] > 1 || LedState[2] > 1 || LedState[3] > 1 || LedState[4] > 1 || LedState[5] > 1 || LedState[6] > 1)
@@ -126,11 +126,11 @@ namespace SimpleWebControlApp.Model
            WebClientState.Client(n);
            //updates client view TxCode   
            txData = WebClientState.TxData;
-           //send request (code 55) to remote IO module for Led status update
+           //send request (code 55) to I/O module for Led status update
            checkLedStateSinglePass(WebClientState.Client(55));
-           //used to maintain our LedAPI in View
+           //used to maintain the LedAPI in View
            ControlAPI = ControlAPI;
-           //updates client view RxData
+           //updates client RxData in view
            rxData = WebClientState.RxData;
            //check connection status everytime we connect to a remote server 
            moduleStatus();
@@ -141,9 +141,9 @@ namespace SimpleWebControlApp.Model
         {
             //updates client view TxCode   
             txData = WebClientState.TxData;
-            //send request (code 55) to remote IO module for Led status update
+            //send request (code 55) to I/O module for Led status update
             checkLedStateSinglePass(WebClientState.Client(55));
-            //updates client view RxData
+            //updates client RxData in view
             rxData = WebClientState.RxData;
             //check connection status everytime we connect to a remote server 
             moduleStatus();

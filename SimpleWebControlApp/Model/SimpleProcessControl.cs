@@ -9,9 +9,7 @@ namespace SimpleWebControlApp.Model
         {
             try
             {
-                
                 Process.Start(@"C:\Program Files (x86)\Internet Explorer\iexplore.exe");
-
             }
             catch (InvalidOperationException ex)
             {

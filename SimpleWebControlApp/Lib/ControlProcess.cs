@@ -34,11 +34,11 @@ namespace SimpleWebControlApp.Model
                 case 1:
                     x = 1;
 
-                    //There are many ways you to start, control and stop a process/dll driver methods, this is just a simple example 
+                    //There are many ways to start, control and stop a process/dll driver methods, this is just a simple example 
                     //Ideally it's better to use a class container to control any processes
 
                     /*** process to start, uncomment to enable ***/
-                    //SimpleProcessControl.StartProcess(); //start a process
+                    //SimpleProcessControl.StartProcess(); 
 
                     Device[x].ON();
                     break;
@@ -49,7 +49,7 @@ namespace SimpleWebControlApp.Model
                     //Follow similar pattern to other devices
 
                     /*** process to stop, uncomment to enable ***/
-                    //SimpleProcessControl.KillProcess(); //stop a process
+                    //SimpleProcessControl.KillProcess(); 
                    
                     break;
                 case 3:

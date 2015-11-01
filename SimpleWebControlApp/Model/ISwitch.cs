@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SimpleWebControlApp.Model
 {
-    //switch feature added to the device module
+    //switch feature added to device module
     public interface ISwitch
     {
         string Name { get; set; }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SimpleWebControlApp.Model
 {
-    //control methods available to the device module
+    //control methods available for device module
     public class Module : ISwitch
     {
         public string Name { get; set; }
