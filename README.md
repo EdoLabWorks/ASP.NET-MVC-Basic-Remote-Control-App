@@ -20,7 +20,7 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
           Device[x].ON();
           break;
 ```
-```js
+```C#
          case 2:
           x = 1;
           Device[x].OFF();
