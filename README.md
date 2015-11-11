@@ -19,7 +19,8 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
          //SimpleProcessControl.StartProcess();
           Device[x].ON();
           break;
---
+```
+```js
          case 2:
           x = 1;
           Device[x].OFF();
@@ -27,6 +28,6 @@ For now, just uncomment the following code section under Lib/ControlProcess.cs
          uncomment to stop the process
          //SimpleProcessControl.KillProcess();  
           break;
-
+```
 
 This project is based on C# ASP.NET MVC under Apache License. 
