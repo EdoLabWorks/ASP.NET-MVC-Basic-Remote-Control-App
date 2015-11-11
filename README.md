@@ -11,7 +11,7 @@ A simple sample is included under the Model folder to start off your process con
 
 For now, just uncomment the following code section under Lib/ControlProcess.cs
 
-```js
+```C#
          case 1:
           x = 1;
           
