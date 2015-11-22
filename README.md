@@ -1,7 +1,7 @@
 # ASP.NET-Basic-Remote-Control-App
 A bare-bones self-contained remote control app with integrated backend control module. 
 
-![](https://github.com/EdoLabWorks/ximgs/blob/master/AspBasicRemote.png)
+[](https://github.com/EdoLabWorks/ximgs/blob/master/AspBasicRemote.png)
 
 Control any executable process in your PC using your mobile device.
 
