@@ -5,9 +5,9 @@ A bare-bones self-contained remote control app with integrated backend control m
 
 Control any executable process in your PC using your mobile device.
 
-Just point the file path of the process you want to control to a particular virtual device from the app and you should be able to start or stop it from a web browser.
+Just point the file path of the process you want to control and you should be able to start or stop it from your web browser.
 
-A simple sample is included under the Model folder to start off your process control. A procedure link is also included on how to access the app from any browser from other devices.
+A sample and how-to link is included under the Model folder to start off your process control.
 
 For now, just uncomment the following code section under Lib/ControlProcess.cs
 
